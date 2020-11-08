@@ -8,13 +8,14 @@
     "lint": "prettier --write .",
     "dev": " nodemon src/index.js",
     "heroku-postbuild": "node src/index.js",
-    "start":"node src/index.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "node-cron": "^2.0.3",
     "twit": "^2.2.11"
   },

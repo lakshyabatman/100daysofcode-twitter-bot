@@ -15,6 +15,8 @@ ACCESS_TOKEN_SECRET=
 USER_NAME=
 USER_ID=
 APP_NAME=
+GITHUB_URL=
+PORT=
 ```
 
 - Run app `npm start`.
