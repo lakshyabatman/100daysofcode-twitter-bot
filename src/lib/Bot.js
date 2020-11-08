@@ -11,6 +11,7 @@ Bot.prototype.fetchTweets = function (screen_name, user_id, count = 10) {
     screen_name,
     user_id,
     exclude_replies: true,
+    tweet_mode: "extended",
     count,
   });
 };
