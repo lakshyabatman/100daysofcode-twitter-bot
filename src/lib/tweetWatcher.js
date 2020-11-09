@@ -25,7 +25,7 @@ const main = (CONFIG, USER) => {
       if (timePassed > 1) {
         let tweetTemplate = `#day${
           lastCodeDay + 1
-        } OG forgot to tweet because he's def coding! So here I'm his bot to tweet for him.\nI exist cause his hardwork! Feel free to check my source code  to know more about me!\n#100DaysOfCode`;
+        } OG forgot to tweet today because he's def coding! So here I'm his bot to tweet from his side.\nI exist cause of his hardwork! Feel free to check my source code  to know more about me!\n#100DaysOfCode`;
 
         TwitterBot.tweet(tweetTemplate)
           .then((data) =>
