@@ -13,7 +13,7 @@ const USER = {
   USER_ID: process.env.USER_ID,
 };
 
-const CRON_STRING = "0 20 * * *";
+const CRON_STRING = "30 21 * * *";
 
 const GITHUB_URL = process.env.GITHUB_URL;
 const PORT = process.env.PORT;
