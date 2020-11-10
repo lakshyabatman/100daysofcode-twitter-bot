@@ -36,6 +36,8 @@ cron.schedule(
   }
 );
 
+main(CONFIG, USER);
+
 app.get("/", (req, res) => {
   res.redirect(GITHUB_URL);
 });
