@@ -1,6 +1,8 @@
 const cron = require("node-cron");
 const main = require("./lib/tweetWatcher");
 const dotenv = require("dotenv").config();
+const Express = require("express");
+const path = require("path");
 
 const {
   CONFIG,
@@ -9,7 +11,6 @@ const {
   GITHUB_URL,
   PORT,
 } = require("./lib/configs");
-const Express = require("express");
 
 const app = Express();
 
@@ -37,9 +38,10 @@ cron.schedule(
 );
 
 main(CONFIG, USER);
+app.use(Express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.redirect(GITHUB_URL);
+  res.redirect("index.html");
 });
 
 app.listen(PORT, () => {
